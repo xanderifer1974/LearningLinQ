@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace LearningLinQ.Entities
 {
-    class Product : IComparable<Product>
+    class Product 
     {
         public string Name { get; set; }
         public double Price { get; set; }
@@ -19,9 +19,6 @@ namespace LearningLinQ.Entities
             return Name + ", " + Price.ToString("F2", CultureInfo.InvariantCulture);
         }
 
-        public int CompareTo(Product other)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
